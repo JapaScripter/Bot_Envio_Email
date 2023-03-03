@@ -5,16 +5,16 @@ from email.message import EmailMessage
 #=====Imports=====#
 
 #=====Dados - Data=====#
-email_sender = 'contato@eutolimpo.com.br'
-email_password = 'DuBDj!HFk0yKeTD&59aFt3g5'
-email_receiver = 'desenvolvimento@gruporoveri.com.br'
+email_sender = "meuemail@gmail.com"
+email_password = "senhadomeuemail123456"
+email_receiver = "fulano@gmail.com"
 #=====Dados - Data=====#
 
 #=====Assunto e Corpo de Texto - Subject and Text Body=====#
 #Assunto e corpo do texto
-subject = 'Teste do Piton'
+subject = 'Parabéns'
 body = """
-Eu me chamo Piton e você me deve R$ 1000,00, segue pix: 11949147702
+Parabéns o teste foi um teste
 """
 #=====Assunto e Corpo de Texto - Subject and Text Body=====#
 
