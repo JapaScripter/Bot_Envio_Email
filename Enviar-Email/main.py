@@ -15,7 +15,7 @@ anexo = "1"
 
 #=====Pegar Classe - Get Class=====#
 try:
-    classification.DadosEnvio(nome, sdemail, password, rcemail, ccemail, ccoemail, text, anexo)
+    main_classification.DadosEnvio(nome, sdemail, password, rcemail, ccemail, ccoemail, text, anexo)
 
 except Exception as e:
     print(f'Deu erro, procura ai filho! \n{e}')
