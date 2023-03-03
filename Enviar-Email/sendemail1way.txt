@@ -1,32 +1,38 @@
-#Imports
+#=====Imports=====#
 import ssl
 import smtplib
 from email.message import EmailMessage
+#=====Imports=====#
 
-#Remetente, recebedor e senha
+#=====Dados - Data=====#
 email_sender = 'contato@eutolimpo.com.br'
 email_password = 'DuBDj!HFk0yKeTD&59aFt3g5'
 email_receiver = 'desenvolvimento@gruporoveri.com.br'
+#=====Dados - Data=====#
 
+#=====Assunto e Corpo de Texto - Subject and Text Body=====#
 #Assunto e corpo do texto
 subject = 'Teste do Piton'
 body = """
 Eu me chamo Piton e você me deve R$ 1000,00, segue pix: 11949147702
 """
+#=====Assunto e Corpo de Texto - Subject and Text Body=====#
 
-#Cabeçalho
+#=====Cabeçalho Email - Email Header=====#
 em = EmailMessage()
 em['From'] = email_sender
 em['To'] = email_receiver
 em['Subject'] = subject
 em.set_content(body)
+#=====Cabeçalho Email - Email Header=====#
 
-#Enviar o que está escrito dentro do anexo
+#=====Anexar Documento - Doc Attachment=====#
 with open('Receba.txt') as myfile:
 	data = myfile.read()
 	em.set_content(data)
+#=====Anexar Documento - Doc Attachment=====#	
 
-#Enviar anexo
+#=====Anexar Documento - Doc Attachment=====#
 with open('Receba.txt', 'rb') as attachment:
 	file_data = attachment.read()
 	print("File data in binary", file_data)
@@ -35,9 +41,11 @@ with open('Receba.txt', 'rb') as attachment:
 	em.add_attachment(file_data, maintype="application", subtype="txt", filename=file_name)
 
 context = ssl.create_default_context()
+#=====Anexar Documento - Doc Attachment=====#
 
-#Enviar email
+#=====Envio - Sender=====#
 with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
 	smtp.login(email_sender, email_password)
 	smtp.sendmail(email_sender, email_receiver, em.as_string())
 	print('E-mail enviado com sucesso... será? Verifique, não tenho certeza.')
+#=====Envio - Sender=====#
