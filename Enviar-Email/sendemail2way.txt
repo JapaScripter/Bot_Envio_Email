@@ -1,22 +1,27 @@
-#import smtplib
+#=====Imports=====#
+import smtplib
+#=====Imports=====#
 
-#sender_email = 'contato@eutolimpo.com.br'
-#password = 'DuBDj!HFk0yKeTD&59aFt3g5'
+#=====Dados - Data=====#
+sender_email = "meuemail@gmail.com"
+password = "senhadomeuemail123456"
+receiver_email = "fulano@gmail.com"
+#=====Dados - Data=====#
 
-#receiver_email = sender_email
-#to = ['desenvolvimento@gruporoveri.com.br']
-#subject = 'Teste Python'
-#body = 'Oi sou o piton e você me deve R$ 5,00. Segue pix: 11949147702'
-
+#=====Assunto e Corpo de Texto - Subject and Text Body=====#
+#to = ["desenvolvimento@gruporoveri.com.br"]
+#subject = "Teste Python"
+#body = "Parabéns o teste foi um teste"
 #email_text = 
 """\
 From: %s
 To: %s
 Subject: %s
-
 %s
 """ #% (receiver_email, ", ".join(to), subject, body)
+#=====Assunto e Corpo de Texto - Subject and Text Body=====#
 
+#=====Envio - Sender=====#
 #try:
 #    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 #    smtp_server.ehlo()
@@ -26,3 +31,4 @@ Subject: %s
 #    print("Email sent successfully!")
 #except Exception as ex:
 #    print("Something went wrong…")
+#=====Envio - Sender=====#
