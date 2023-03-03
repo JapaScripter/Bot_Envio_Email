@@ -9,10 +9,10 @@ receiver_email = "fulano@gmail.com"
 #=====Dados - Data=====#
 
 #=====Assunto e Corpo de Texto - Subject and Text Body=====#
-#to = ["fulano@gmail.com"]
-#subject = "Parabéns"
-#body = "Parabéns o teste foi um teste"
-#email_text = 
+to = ["fulano@gmail.com"]
+subject = "Parabéns"
+body = "Parabéns o teste foi um teste"
+email_text = 
 """\
 From: %s
 To: %s
@@ -22,13 +22,13 @@ Subject: %s
 #=====Assunto e Corpo de Texto - Subject and Text Body=====#
 
 #=====Envio - Sender=====#
-#try:
-#    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-#    smtp_server.ehlo()
-#    smtp_server.login(sender_email, password)
-#    smtp_server.sendmail(receiver_email, to, email_text)
-#    smtp_server.close()
-#    print("Email sent successfully!")
-#except Exception as ex:
-#    print("Something went wrong…")
+try:
+    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    smtp_server.ehlo()
+    smtp_server.login(sender_email, password)
+    smtp_server.sendmail(receiver_email, to, email_text)
+    smtp_server.close()
+    print("Email sent successfully!")
+except Exception as ex:
+    print("Something went wrong…")
 #=====Envio - Sender=====#
