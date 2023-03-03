@@ -1,0 +1,24 @@
+#import smtplib
+
+#try:
+#    # Create your SMTP session
+#    smtp = smtplib.SMTP('smtp.gmail.com', 465)
+
+    # Use TLS to add security
+#    smtp.starttls()
+
+    # User Authentication
+#    smtp.login("contato@eutolimpo.com.br", "DuBDj!HFk0yKeTD&59aFt3g5")
+
+    # Defining The Message
+#    message = "Oi sou o piton e você me deve R$ 5,00. Segue pix: 11949147702"
+
+    # Sending the Email
+#   smtp.sendmail("contato@eutolimpo.com.br", "desenvolvimento@gruporoveri.com.br", message)
+
+    # Terminating the session
+#    smtp.quit()
+#    print("Email sent successfully!")
+
+#except Exception as ex:
+#    print("Something went wrong...")
