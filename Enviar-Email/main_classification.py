@@ -47,7 +47,7 @@ class DadosEnvio(DadosEmail):
 #=====Anexar Documento - Doc Attachment=====#
 if anexo == "1":
 		# Enviar anexo
-		with open('Receba.txt', 'rb') as attachment:
+		with open('txtAnexo_Attach.txt', 'rb') as attachment:
 				file_data = attachment.read()
 				print("File data in binary", file_data)
 				file_name = attachment.name
