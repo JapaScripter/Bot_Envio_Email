@@ -26,9 +26,9 @@
 
 <!--=====Documento txtAnexo_Attach - Document txtAnexo_Attach====-->
 <br>
-<p>É um exemplo de documento que pode ser enviado anexado ao email ou pode ser lido e apenas o seu conteúdo pode ser enviado no texto do corpo.</p>
+<p>É um exemplo de envio de email e documento que pode ser enviado anexado ao email ou pode ser lido e apenas o seu conteúdo pode ser enviado no texto do corpo.</p>
 
-<p>Is a document example that could be send attached at the email or could be read and only the content could be send in body text.</p>
+<p>Is an example of send email and documents that could be send attached at the email or could be read and only the content could be send in body text.</p>
 <br>
 <hr>
 <!--=====Documento txtAnexo_Attach - Document txtAnexo_Attach====-->
